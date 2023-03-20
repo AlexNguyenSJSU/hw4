@@ -1,0 +1,17 @@
+1. Does the change inside increment_int_a change the variable a after the function call?
+Answer: No, the function increment_int_a doesn't change the variable 'a' (int a) after the function call.
+
+2. Does the change inside increment_int_b change the variable b after the function call?
+Answer: Yes, the function increment_int_b changes the variable 'b' (list b) after the function call. 
+
+3. If they differ answer why? if not why not?
+They generates different answers because of this reasons:
+Answer: The function increment_int_a cannot modify the variable 'a' because the variable 'a' is an integer. According to my research on the Internet, in
+        Python, integers are immutable. Therefore, when the variable 'a' is passed to the function increment_int_a, only the copy of this variable will be
+        made and the 'someval' parameter will point to this copy, not the original variable 'a'. As a result, any changes inside this function will be 
+        applied to this copy, not the original variable 'a'
+
+        The function increment_int_b could change the variable 'b' because the variable 'b' is a list. In Python, lists are mutable objects. Therefore, 
+        whenever the variable 'b' (or list 'b') is passed to the function increment_int_b, that means a reference to this list 'b' will be passed to the 
+        function increment_int_b. So, the parameter 'someval' points to the same list like the variable 'b'. As a result, any modifications inside this 
+        function can be applied to the list 'b'; in this case it adds 1 to the first element of the list 'b'.
