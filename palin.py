@@ -1,9 +1,7 @@
 def palindrome (list_input):
     check = False
 
-    if len(list_input) <= 0:
-        return check
-    elif len(list_input) == 1:
+    if len(list_input) <= 1:
         check = True
         return check
     else:
